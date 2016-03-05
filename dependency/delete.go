@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
+	"github.com/fschl/glide/cfg"
+	"github.com/fschl/glide/msg"
+	gpath "github.com/fschl/glide/path"
 )
 
 // DeleteUnused removes packages from vendor/ that are no longer used.
@@ -53,7 +53,7 @@ func DeleteUnused(conf *cfg.Config) error {
 			}
 		}
 
-		// If a package is, for example, github.com/Masterminds/glide the
+		// If a package is, for example, github.com/fschl/glide the
 		// previous look will not mark the directories github.com or
 		// github.com/Masterminds to keep. Here we see if these names prefix
 		// and packages we know about to mark as keepers.

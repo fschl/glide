@@ -39,11 +39,11 @@ package main
 import (
 	"path/filepath"
 
-	"github.com/Masterminds/glide/action"
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
-	"github.com/Masterminds/glide/repo"
-	"github.com/Masterminds/glide/util"
+	"github.com/fschl/glide/action"
+	"github.com/fschl/glide/msg"
+	gpath "github.com/fschl/glide/path"
+	"github.com/fschl/glide/repo"
+	"github.com/fschl/glide/util"
 
 	"github.com/codegangsta/cli"
 
@@ -59,7 +59,7 @@ const usage = `The lightweight vendor package manager for your Go projects.
 Each project should have a 'glide.yaml' file in the project directory. Files
 look something like this:
 
-	package: github.com/Masterminds/glide
+	package: github.com/fschl/glide
 	imports:
 		- package: github.com/Masterminds/cookoo
 		  vcs: git

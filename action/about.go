@@ -1,6 +1,6 @@
 package action
 
-import "github.com/Masterminds/glide/msg"
+import "github.com/fschl/glide/msg"
 
 const aboutMessage = `
 Glide: Vendor Package Management for Go. Manage your vendor and vendored

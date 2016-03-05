@@ -1,8 +1,8 @@
 package action
 
 import (
-	"github.com/Masterminds/glide/godep"
-	"github.com/Masterminds/glide/msg"
+	"github.com/fschl/glide/godep"
+	"github.com/fschl/glide/msg"
 )
 
 // ImportGodep imports a Godep file.

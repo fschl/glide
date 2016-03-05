@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
-	"github.com/Masterminds/glide/repo"
-	"github.com/Masterminds/glide/util"
+	"github.com/fschl/glide/cfg"
+	"github.com/fschl/glide/msg"
+	gpath "github.com/fschl/glide/path"
+	"github.com/fschl/glide/repo"
+	"github.com/fschl/glide/util"
 )
 
 // Get fetches one or more dependencies and installs.
@@ -113,6 +113,11 @@ func addPkgsToConfig(conf *cfg.Config, names []string, insecure bool) error {
 			return fmt.Errorf("Package name is required for %q.", name)
 		}
 
+		if conf.HasIgnore(root) {
+			msg.Warn("Package %q is set to be ignored in glide.yaml. Skipping", root)
+			continue
+		}
+
 		if conf.HasDependency(root) {
 
 			// Check if the subpackage is present.
@@ -127,11 +132,6 @@ func addPkgsToConfig(conf *cfg.Config, names []string, insecure bool) error {
 			} else {
 				msg.Warn("Package %q is already in glide.yaml. Skipping", root)
 			}
-			continue
-		}
-
-		if conf.HasIgnore(root) {
-			msg.Warn("Package %q is set to be ignored in glide.yaml. Skipping", root)
 			continue
 		}
 

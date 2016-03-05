@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/msg"
-	"github.com/Masterminds/glide/util"
+	"github.com/fschl/glide/cfg"
+	"github.com/fschl/glide/msg"
+	"github.com/fschl/glide/util"
 )
 
 // MissingPackageHandler handles the case where a package is missing during scanning.

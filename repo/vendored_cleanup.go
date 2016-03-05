@@ -4,9 +4,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
+	"github.com/fschl/glide/cfg"
+	"github.com/fschl/glide/msg"
+	gpath "github.com/fschl/glide/path"
 )
 
 // VendoredCleanup cleans up vendored codebases after an update.

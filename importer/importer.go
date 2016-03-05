@@ -6,10 +6,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/gb"
-	"github.com/Masterminds/glide/godep"
-	"github.com/Masterminds/glide/gpm"
+	"github.com/fschl/glide/cfg"
+	"github.com/fschl/glide/gb"
+	"github.com/fschl/glide/godep"
+	"github.com/fschl/glide/gpm"
 )
 
 var i = &DefaultImporter{}

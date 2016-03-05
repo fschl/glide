@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	//"github.com/Masterminds/glide/msg"
+	//"github.com/fschl/glide/msg"
 )
 
 var cacheEnabled = true

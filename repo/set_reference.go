@@ -3,9 +3,9 @@ package repo
 import (
 	"sync"
 
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
+	"github.com/fschl/glide/cfg"
+	"github.com/fschl/glide/msg"
+	gpath "github.com/fschl/glide/path"
 )
 
 // SetReference is a command to set the VCS reference (commit id, tag, etc) for

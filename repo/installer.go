@@ -7,12 +7,12 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Masterminds/glide/cfg"
-	"github.com/Masterminds/glide/dependency"
-	"github.com/Masterminds/glide/importer"
-	"github.com/Masterminds/glide/msg"
-	gpath "github.com/Masterminds/glide/path"
-	"github.com/Masterminds/glide/util"
+	"github.com/fschl/glide/cfg"
+	"github.com/fschl/glide/dependency"
+	"github.com/fschl/glide/importer"
+	"github.com/fschl/glide/msg"
+	gpath "github.com/fschl/glide/path"
+	"github.com/fschl/glide/util"
 	"github.com/Masterminds/semver"
 	"github.com/codegangsta/cli"
 )
